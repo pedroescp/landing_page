@@ -6,8 +6,9 @@
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
-    top: 0;
+    top: 0px;
     z-index: 999;
+    margin-top: 0px;
   }
   
   .navbar-container {
