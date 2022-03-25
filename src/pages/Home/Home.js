@@ -1,8 +1,8 @@
 import '../../App.css';
 import React from 'react'; 
-import HeroSection from '../heroComponents/HeroSection';
-import Cards from '../cardItem/Cards';
-import Footer from '../footer/Footer';
+import HeroSection from '../../components/heroComponents/HeroSection';
+import Cards from '../../components/cardItem/Cards';
+import Footer from '../../components/footer/Footer';
 
 function Home(){
     return (
