@@ -1,5 +1,5 @@
 import React from 'react';
-import './SingUp.css';
+import './SignUp.css';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SaveIcon from '@mui/icons-material/Save';
