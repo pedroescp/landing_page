@@ -1,10 +1,8 @@
 import React from 'react';
-import './SignUp.css';
+import './Login.css';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SaveIcon from '@mui/icons-material/Save';
-
-
 import TextField from '@mui/material/TextField';
 import { useFormik } from 'formik';
 
@@ -37,7 +35,7 @@ export default function SignUp() {
     <>
       <Box className='sign-up'>
         <div className='sign-up-form'>
-          <h1>Sign Up</h1>
+          <h1>Login</h1>
 
           <form className='sing-up-input-form' onSubmit={signUpFormik.handleSubmit}>
             <div className='sing-up-input'>
@@ -47,7 +45,7 @@ export default function SignUp() {
                        label="Login" 
                        variant="standard" 
                        required 
-                       size='medium'
+                       size='small'
                        onChange={signUpFormik.handleChange}
                        values={signUpFormik.values.login}
             />
@@ -57,16 +55,19 @@ export default function SignUp() {
                        label="Password" 
                        variant="standard" 
                        required 
-                       size='medium' 
+                       size='small' 
                        onChange={signUpFormik.handleChange}
                        values={signUpFormik.values.password}
             />
 
             </div>
             <div className='button-div'>
-              <Button type='submit' className='button' variant="contained" size='medium' endIcon={<SaveIcon />}>
+              <Button type='submit' className='button' variant="contained" size='small' endIcon={<SaveIcon />}>
                 Send
               </Button>
+              <div className='sing-up-input-form'>
+                <Link to='/sign-up' className='signUpLink'>SIGN-UP</Link>
+              </div>
             </div>
           </form>
         </div>
