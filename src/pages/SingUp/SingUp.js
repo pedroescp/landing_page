@@ -15,16 +15,16 @@ export default function () {
 
                     <form className='sing-up-input-form'>
                         <div className='sing-up-input'>
-                            <TextField autoFocus='true' type={'string'} label="User" variant="outlined" autoComplete="off" required size='small' />
+                            <TextField autoFocus='true' type={'string'} label="User"  variant="standard" autoComplete="off" required size='small' />
                         </div>
                         <div className='sing-up-input'>
-                            <TextField autoFocus='true' type={'email'} label="Email" variant="outlined" autoComplete="off" required size='small' />
+                            <TextField autoFocus='true' type={'email'} label="Email"  variant="standard" autoComplete="off" required size='small' />
                         </div>
                         <div className='sing-up-input'>
-                            <TextField type={'password'} label="Password" variant="outlined" autoComplete="off" required size='small' />
+                            <TextField type={'password'} label="Password"  variant="standard" autoComplete="off" required size='small' />
                         </div>
                         <div className='sing-up-input'>
-                            <TextField type={'password'} label="Password" variant="outlined" autoComplete="off" required size='small' />
+                            <TextField type={'password'} label="Password"  variant="standard" autoComplete="off" required size='small' />
                         </div>
                         <div className='button-div'>
                             <Button className='button' variant="contained" size='small' endIcon={<SaveIcon />}>
