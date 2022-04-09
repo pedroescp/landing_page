@@ -1,51 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '../buttons/login/Button'
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import   './NavBar.css';
 
 function Navbar() {
-  const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
-
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-
-  useEffect(() => {
-    showButton();
-  }, []);
-
-  window.addEventListener('resize', showButton);
 
   return (
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <Link to='/homepage' className='navbar-logo' >
             TRVL
             <i class='fab fa-typo3' />
           </Link>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          <div className='menu-icon'>
+            <i className='fas fa-times'/>
           </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <ul className='nav-menu'>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
+              <Link to='/homepage' className='nav-links' >
+                Tabelas
               </Link>
             </li>
             <li className='nav-item'>
               <Link
                 to='/services'
                 className='nav-links'
-                onClick={closeMobileMenu}
+                
               >
                 Services
               </Link>
@@ -54,7 +35,7 @@ function Navbar() {
               <Link
                 to='/products'
                 className='nav-links'
-                onClick={closeMobileMenu}
+                
               >
                 Products
               </Link>
@@ -64,13 +45,13 @@ function Navbar() {
               <Link
                 to='/login'
                 className='nav-links-mobile'
-                onClick={closeMobileMenu}
+                
               >
                 Login
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Login</Button>}
+          <Button buttonStyle='btn--outline'>Login</Button>
         </div>
       </nav>
     </>
