@@ -5,12 +5,10 @@ import Button from '@mui/material/Button';
 import SaveIcon from '@mui/icons-material/Save';
 import TextField from '@mui/material/TextField';
 import { Link } from 'react-router-dom';
-import Navbar from '../../components/navbar/Navbar';
 
 export default function () {
     return (
         <>
-        <Navbar />
             <Box className='sign-up'>
                 <div className='sign-up-form'>
                     <h1>Sign-UP</h1>

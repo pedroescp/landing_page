@@ -1,7 +1,6 @@
 import React from 'react';
 import './Login.css';
 
-import Navbar from '../../components/navbar/Navbar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SaveIcon from '@mui/icons-material/Save';
@@ -37,7 +36,6 @@ export default function SignUp() {
   return (
     <>
     
-    <Navbar />
       <Box className='sign-up'>
         <div className='sign-up-form'>
           <h1>Login</h1>
