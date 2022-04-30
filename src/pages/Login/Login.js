@@ -7,6 +7,7 @@ import SaveIcon from '@mui/icons-material/Save';
 import TextField from '@mui/material/TextField';
 import { useFormik } from 'formik';
 import { Link } from 'react-router-dom';
+import Navbar from '../../components/navbar/Navbar';
 
 export default function SignUp() {
   const styles = theme => ({
@@ -35,7 +36,7 @@ export default function SignUp() {
 
   return (
     <>
-    
+      <Navbar />
       <Box className='sign-up'>
         <div className='sign-up-form'>
           <h1>Login</h1>

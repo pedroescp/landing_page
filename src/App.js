@@ -1,19 +1,17 @@
 
 import './App.css';
-import Navbar from './components/navbar/Navbar';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';    
 import Home from './pages/home-page/Home';
 import Login from './pages/Login/Login.js';
 import Products from './pages/Products/Products.js';
 import Services from './pages/Services/Services.js';
 import SingUp from './pages/SingUp/SingUp.js';
-import HomePage from './pages/Home/HomePage'; 
+import HomePage from './pages/Home/HomePage';
 
 function App() {
   return (
     <>
       <Router>  
-      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
